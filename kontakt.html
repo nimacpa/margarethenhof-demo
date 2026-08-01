@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt & Reservierung | Margarethenhof Brenken</title>
+    <meta name="description" content="Kontakt, Lage und Reservierungsanfrage fuer Margarethenhof Brenken." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html"><span>Margarethenhof</span><small>Kontakt</small></a>
+      <button class="nav-toggle" type="button" aria-label="Menue oeffnen" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Restaurant</a>
+        <a href="menu.html">Speisekarte</a>
+        <a href="pension.html">Ferienwohnung</a>
+        <a class="active" href="kontakt.html">Kontakt</a>
+        <a class="nav-cta" href="#reservierung">Tisch anfragen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="page-hero-media contact-hero-image" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Kontakt & Reservierung</p>
+          <h1>Besuch planen.</h1>
+          <p class="hero-copy">Adresse, Oeffnungszeiten und eine einfache Tischanfrage fuer den Demo-Stand.</p>
+        </div>
+      </section>
+
+      <section class="reservation section" id="reservierung">
+        <div class="split">
+          <div class="reveal">
+            <p class="section-kicker">Tisch anfragen</p>
+            <h2>Mit Tischwunsch und Zeitraum.</h2>
+            <p>
+              Diese Anfrage ist noch kein echtes Buchungssystem. Sie zeigt der Familie, wie Gäste spaeter Tischbereich,
+              Aufenthaltsdauer und optional einen bevorzugten Tisch waehlen koennen.
+            </p>
+          </div>
+          <form class="reservation-form reveal" data-reservation-form>
+            <label>Name<input name="name" type="text" required /></label>
+            <label>Telefonnummer<input name="phone" type="tel" /></label>
+            <label>E-Mail<input name="email" type="email" /></label>
+            <div class="form-row">
+              <label>Datum<input name="date" type="date" required /></label>
+              <label>Uhrzeit<input name="time" type="time" required /></label>
+            </div>
+            <label>Anzahl der Personen<input name="guests" type="number" min="1" max="20" value="2" /></label>
+            <div class="preference-grid">
+              <label>Bereich
+                <select name="area">
+                  <option>Innenbereich</option>
+                  <option>Terrasse / Biergarten</option>
+                  <option>Ruhiger Tisch</option>
+                  <option>Fensterplatz</option>
+                  <option>Größerer Tisch</option>
+                </select>
+              </label>
+              <label>Aufenthaltsdauer
+                <select name="duration">
+                  <option>Ca. 1 Stunde</option>
+                  <option>Ca. 1,5 Stunden</option>
+                  <option>Ca. 2 Stunden</option>
+                  <option>Länger / Gruppe</option>
+                </select>
+              </label>
+            </div>
+            <label>Gewünschter Tisch<input name="table" type="text" placeholder="z. B. Tisch 2 oder Fensterplatz" data-table-input /></label>
+            <label>Nachricht<textarea name="message" rows="4"></textarea></label>
+            <button class="button primary" type="submit">Anfrage testen</button>
+            <p class="form-message" data-form-message aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact section" id="kontakt">
+        <div class="contact-card reveal">
+          <p class="section-kicker">Kontakt & Lage</p>
+          <h2>Margarethenhof Brenken</h2>
+          <p>Gasthof / Pension</p>
+          <address>Sendstraße 5<br />33142 Büren-Brenken<br />Germany</address>
+          <div class="contact-actions">
+            <a class="button primary" href="https://www.google.com/maps/search/?api=1&query=Sendstra%C3%9Fe%205%2C%2033142%20B%C3%BCren%2C%20Germany" target="_blank" rel="noreferrer">Route öffnen</a>
+            <a class="button secondary" href="menu.html">Speisekarte</a>
+          </div>
+          <p class="placeholder-note">Telefon und E-Mail werden ergänzt, sobald sie bestätigt sind.</p>
+        </div>
+        <div class="map-placeholder reveal" aria-label="Kartenplatzhalter">
+          <span>Sendstraße 5</span>
+          <strong>Büren-Brenken</strong>
+          <small>Kartenbereich für den Demo-Entwurf</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Margarethenhof Brenken · Demo-Website</p>
+      <p>Impressum und Datenschutz muessen vor echter Veröffentlichtung ergänzt werden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

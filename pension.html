@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ferienwohnung | Margarethenhof Brenken</title>
+    <meta name="description" content="Demo-Seite fuer die Ferienwohnung im Margarethenhof Brenken." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html"><span>Margarethenhof</span><small>Ferienwohnung</small></a>
+      <button class="nav-toggle" type="button" aria-label="Menue oeffnen" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Restaurant</a>
+        <a href="menu.html">Speisekarte</a>
+        <a class="active" href="pension.html">Ferienwohnung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a class="nav-cta" href="kontakt.html#reservierung">Tisch anfragen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-media pension-hero-image" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Ferienwohnung</p>
+          <h1>Übernachten im Margarethenhof.</h1>
+          <p class="hero-copy">Eine eigene Seite fuer die Unterkunft, getrennt vom Restaurant-Erlebnis.</p>
+        </div>
+      </section>
+
+      <section class="pension section">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Airbnb-Daten</p>
+          <h2>Frisch renovierte Dachgeschosswohnung.</h2>
+          <p>
+            Laut Airbnb-Angaben ist die Unterkunft eine ganze Ferienwohnung in Büren. Sie eignet sich für Familien,
+            Gruppen, Monteure und längere Aufenthalte. Finaler Text, Preise und Fotos sollten von der Familie bestaetigt
+            werden.
+          </p>
+        </div>
+        <div class="pension-details reveal">
+          <div><span>Bis zu</span><strong>6</strong><small>Gäste</small></div>
+          <div><span>Schlafen</span><strong>3</strong><small>Schlafzimmer</small></div>
+          <div><span>Komfort</span><strong>4</strong><small>Betten</small></div>
+          <div><span>Bad</span><strong>1</strong><small>Bad</small></div>
+        </div>
+        <div class="pension-grid">
+          <article class="pension-panel reveal">
+            <span>01</span>
+            <h3>Ganze Unterkunft</h3>
+            <p>Private Ferienwohnung im Dachgeschoss, direkt im Margarethenhof.</p>
+          </article>
+          <article class="pension-panel reveal">
+            <span>02</span>
+            <h3>Ausstattung</h3>
+            <p>Küche, WLAN, TV, kostenloses Parken, Rauchmelder und Haustiere erlaubt laut Airbnb.</p>
+          </article>
+          <article class="pension-panel reveal">
+            <span>03</span>
+            <h3>Buchung</h3>
+            <p>Der Demo verlinkt zur bestehenden Airbnb-Seite. Eine eigene Buchung sollte spaeter erst geplant werden.</p>
+          </article>
+        </div>
+        <div class="pension-amenities reveal">
+          <span>Küche</span>
+          <span>WLAN</span>
+          <span>TV</span>
+          <span>Kostenloses Parken</span>
+          <span>Haustiere erlaubt</span>
+          <span>Check-in ab 15:00 Uhr</span>
+        </div>
+        <a class="button primary airbnb-link reveal" href="https://www.airbnb.com.au/rooms/1679141610718485690" target="_blank" rel="noreferrer">
+          Airbnb-Angebot ansehen
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Margarethenhof Brenken · Demo-Website</p>
+      <p>Unterkunftsdaten vor Veröffentlichtung mit der Familie pruefen.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

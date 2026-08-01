@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Margarethenhof Brenken | Restaurant</title>
+    <meta
+      name="description"
+      content="Demo-Website fuer Margarethenhof Brenken: Restaurant, Speisekarte und Tischanfrage in Bueren-Brenken."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Margarethenhof Brenken Startseite">
+        <span>Margarethenhof</span>
+        <small>Restaurant</small>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menue oeffnen" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a class="active" href="index.html">Restaurant</a>
+        <a href="menu.html">Speisekarte</a>
+        <a href="pension.html">Ferienwohnung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a class="nav-cta" href="kontakt.html#reservierung">Tisch anfragen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero restaurant-hero" id="start">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1800&q=80"
+          aria-hidden="true"
+        ></video>
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Büren-Brenken · Sendstraße 5</p>
+          <h1>Restaurant Margarethenhof</h1>
+          <p class="hero-copy">
+            Deutsche Klassiker, persische Spezialitäten, Pizza, Pasta und Drinks in einer warmen Gasthof-Atmosphäre.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="menu.html">Speisekarte ansehen</a>
+            <a class="button secondary" href="kontakt.html#reservierung">Tisch anfragen</a>
+          </div>
+        </div>
+        <div class="hero-note">Video-Platzhalter · spaeter echtes Margarethenhof-Kochvideo einsetzen</div>
+      </section>
+
+      <section class="intro section compact-section">
+        <div class="section-kicker reveal">Restaurant-Konzept</div>
+        <div class="split">
+          <div class="reveal">
+            <h2>Die Startseite bleibt beim Essen.</h2>
+          </div>
+          <div class="intro-copy reveal">
+            <p>
+              Die neue Startseite fuehrt Besucher direkt zum Restaurant: Stimmung, Speisekarte, Oeffnungszeiten und
+              Tischanfrage. Die Ferienwohnung hat jetzt eine eigene Seite, damit beide Geschaeftsbereiche klarer wirken.
+            </p>
+            <p>
+              Der Video-Hintergrund ist im Demo nur als Platzhalter gedacht. Spaeter kann hier ein echtes kurzes Video
+              aus der Kueche laufen, zum Beispiel ein Hauptgericht ueber Feuer oder auf dem Grill.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dishes">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Aus der Küche</p>
+          <h2>Gerichte, die sofort Lust machen.</h2>
+          <p>Eine kurze Auswahl fuer die Startseite. Die volle Speisekarte hat jetzt eine eigene Seite.</p>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=900&q=80" alt="Demo-Foodfoto fuer Mirza Ghasemi" />
+            <div><span>Persisch</span><h3>Mirza Ghasemi</h3><p>Auberginen, Tomaten, Knoblauch, Ei und Brot.</p></div>
+          </article>
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Demo-Foodfoto fuer Persischer Teller" />
+            <div><span>Hauptgericht</span><h3>Persischer Teller</h3><p>Orientalischer Reis, Rinderkebab, Tomaten und Salat.</p></div>
+          </article>
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" alt="Demo-Foodfoto fuer Bauernfruehstueck" />
+            <div><span>Klassiker</span><h3>Bauernfrühstück</h3><p>Bratkartoffeln, Zwiebeln, Speck, Eier und Salat.</p></div>
+          </article>
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Demo-Foodfoto fuer Pizza" />
+            <div><span>Pizza</span><h3>Pizza Paradiso</h3><p>Spinat, Zwiebeln, Tomaten, Feta und Knoblauch.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section table-concept" id="tischplan">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Reservierungsidee</p>
+          <h2>Tischplan als Demo-Konzept.</h2>
+          <p>
+            Diese Karte ist noch nicht zu 100 Prozent genau, zeigt aber sehr gut die Richtung: Gäste wählen einen
+            Tischbereich, Zeitraum und senden danach eine Anfrage.
+          </p>
+        </div>
+        <div class="table-demo reveal">
+          <div class="floor-map" data-table-map aria-label="Demo-Tischplan">
+            <img src="assets/images/floor-map-web.jpg" alt="3D-Demo-Tischplan fuer Margarethenhof" />
+            <button class="table-hotspot room-two" type="button" data-table="Raum 2 · ruhiger Bereich">Raum 2</button>
+            <button class="table-hotspot room-one" type="button" data-table="Raum 1 · Gruppenbereich">Raum 1</button>
+            <button class="table-hotspot bar-area" type="button" data-table="Barbereich">Bar</button>
+            <button class="table-hotspot main-left" type="button" data-table="Main Salon · linker Bereich">Salon links</button>
+            <button class="table-hotspot main-center" type="button" data-table="Main Salon · mittlerer Bereich">Salon Mitte</button>
+            <button class="table-hotspot main-right" type="button" data-table="Main Salon · rechter Bereich">Salon rechts</button>
+          </div>
+          <div class="table-copy">
+            <p class="eyebrow">Spaeter erweiterbar</p>
+            <h3 data-selected-table>Bitte Tisch anklicken</h3>
+            <p>
+              Für die echte Version brauchen wir später den finalen Grundriss, Tischnummern, Sitzplätze und
+              Reservierungsregeln. Für die Familienpräsentation zeigt diese Ansicht schon sehr gut die Idee.
+            </p>
+            <div class="time-options">
+              <span>17:00</span>
+              <span>18:30</span>
+              <span>20:00</span>
+              <span>2 Stunden</span>
+            </div>
+            <a class="button primary table-reserve-link" href="kontakt.html#reservierung">Mit Tischwunsch anfragen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hours section" id="oeffnungszeiten">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Öffnungszeiten</p>
+          <h2>Planen Sie Ihren Besuch.</h2>
+        </div>
+        <div class="hours-card reveal">
+          <div><span>Montag</span><strong>Ruhetag</strong></div>
+          <div><span>Dienstag</span><strong>Ruhetag</strong></div>
+          <div><span>Mittwoch</span><strong>17:00-22:00</strong></div>
+          <div><span>Donnerstag</span><strong>17:00-22:00</strong></div>
+          <div><span>Freitag</span><strong>17:00-01:00</strong></div>
+          <div><span>Samstag</span><strong>12:00-01:00</strong></div>
+          <div><span>Sonntag</span><strong>12:00-22:00</strong></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Margarethenhof Brenken · Demo-Website</p>
+      <p>Stock-Bilder und Video-Platzhalter muessen spaeter durch echte Medien ersetzt werden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

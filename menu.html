@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Speisekarte | Margarethenhof Brenken</title>
+    <meta name="description" content="Demo-Speisekarte fuer Margarethenhof Brenken." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html"><span>Margarethenhof</span><small>Speisekarte</small></a>
+      <button class="nav-toggle" type="button" aria-label="Menue oeffnen" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Restaurant</a>
+        <a class="active" href="menu.html">Speisekarte</a>
+        <a href="pension.html">Ferienwohnung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a class="nav-cta" href="kontakt.html#reservierung">Tisch anfragen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-media menu-hero-image" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Speisekarte</p>
+          <h1>Vielseitig, warm und unkompliziert.</h1>
+          <p class="hero-copy">Deutsche Klassiker, persische Spezialitaeten, Pizza, Pasta, Salate, Desserts und Drinks.</p>
+        </div>
+      </section>
+
+      <section class="menu section" id="speisekarte">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Demo-Auszug</p>
+          <h2>Aus der aktuellen Karte.</h2>
+          <p class="notice">Preise und Angebot können abweichen.</p>
+        </div>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Speisekarten Kategorien">
+          <button class="active" type="button" data-menu-tab="vorspeisen">Vorspeisen</button>
+          <button type="button" data-menu-tab="salate">Salate</button>
+          <button type="button" data-menu-tab="pizza">Pizza</button>
+          <button type="button" data-menu-tab="hauptgerichte">Hauptgerichte</button>
+          <button type="button" data-menu-tab="desserts">Nachspeisen</button>
+          <button type="button" data-menu-tab="getraenke">Getränke</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" data-menu-panel="vorspeisen">
+            <div class="menu-item"><div><h3>Tzaziki</h3><p>Mit selbstgebackenem Brot.</p></div><span>3,90 €</span></div>
+            <div class="menu-item"><div><h3>Mirza Ghasemi</h3><p>Persische Vorspeise mit Auberginen, Tomaten, Knoblauch und Ei.</p></div><span>4,90 €</span></div>
+            <div class="menu-item"><div><h3>Vorspeise Mediterran</h3><p>Zucchini, Tomate, Grillkäse, Brot, Sour Cream und Olivenöl.</p></div><span>6,50 €</span></div>
+            <div class="menu-item"><div><h3>Gemischte Platte</h3><p>Knoblauchcreme, Tzaziki, Mirza Ghasemi und Oliven für zwei Personen.</p></div><span>9,50 €</span></div>
+          </div>
+          <div class="menu-panel" data-menu-panel="salate">
+            <div class="menu-item"><div><h3>Kleiner gemischter Salat</h3><p>Saisonaler Salat, Tomaten, Gurken, Mais, Paprika, Peperoni und Oliven.</p></div><span>6,50 €</span></div>
+            <div class="menu-item"><div><h3>Mozzarella Salat</h3><p>Salat, Tomaten, Zwiebeln, Oliven und selbstgebackenes Brot.</p></div><span>8,90 €</span></div>
+            <div class="menu-item"><div><h3>Salat Vital mit Fetakäse</h3><p>Großer Salat mit griechischem Fetakäse und Brot.</p></div><span>11,90 €</span></div>
+            <div class="menu-item"><div><h3>Salat Vital mit Hähnchen</h3><p>Mit Hähnchenbruststreifen oder Thunfisch.</p></div><span>12,90 €</span></div>
+          </div>
+          <div class="menu-panel" data-menu-panel="pizza">
+            <div class="menu-item"><div><h3>Margherita</h3><p>Hausgemachte Tomatensoße, frischer Teig und Käse.</p></div><span>5,90 €</span></div>
+            <div class="menu-item"><div><h3>Spezial</h3><p>Salami, Schinken, frische Champignons und Zwiebeln.</p></div><span>8,50 €</span></div>
+            <div class="menu-item"><div><h3>Vegetarisch</h3><p>Paprika, Champignons, Zwiebeln und Peperoni.</p></div><span>8,90 €</span></div>
+            <div class="menu-item"><div><h3>Paradiso</h3><p>Spinat, Zwiebeln, Tomaten, Feta und Knoblauch.</p></div><span>10,90 €</span></div>
+          </div>
+          <div class="menu-panel" data-menu-panel="hauptgerichte">
+            <div class="menu-item"><div><h3>Grillkartoffel</h3><p>Mit Sour Cream, Hähnchenbruststreifen und Salatbeilage.</p></div><span>13,90 €</span></div>
+            <div class="menu-item"><div><h3>Fitness-Teller</h3><p>Hähnchenbrust, Topinambur, Gemüse, Ingwer und orientalischer Kräuterreis.</p></div><span>14,90 €</span></div>
+            <div class="menu-item"><div><h3>Gyros nach Art des Hauses</h3><p>Mit Zwiebeln, Tzaziki, Pommes und Krautsalat.</p></div><span>12,90 €</span></div>
+            <div class="menu-item"><div><h3>Persischer Teller</h3><p>Orientalischer Reis, Rinderkebab, gegrillte Tomaten und Salat.</p></div><span>14,90 €</span></div>
+          </div>
+          <div class="menu-panel" data-menu-panel="desserts">
+            <div class="menu-item"><div><h3>Hausgemachtes Tiramisu</h3><p>Klassischer süßer Abschluss.</p></div><span>3,50 €</span></div>
+            <div class="menu-item"><div><h3>Schoko-Becher</h3><p>Schokoladen- und Vanilleeis, Sahne und Schokoladensoße.</p></div><span>5,90 €</span></div>
+            <div class="menu-item"><div><h3>Heiß auf Eis</h3><p>Vanilleeis mit heißen Himbeeren.</p></div><span>5,90 €</span></div>
+          </div>
+          <div class="menu-panel" data-menu-panel="getraenke">
+            <div class="menu-item"><div><h3>Cappuccino</h3><p>Heißgetränk.</p></div><span>2,90 €</span></div>
+            <div class="menu-item"><div><h3>Veltins Pils vom Fass</h3><p>0,3 l / 0,5 l / 1,0 l.</p></div><span>ab 2,80 €</span></div>
+            <div class="menu-item"><div><h3>Aperol Spritz</h3><p>Aperol, Prosecco, Orangen und Soda.</p></div><span>6,50 €</span></div>
+            <div class="menu-item"><div><h3>Espresso Martini</h3><p>Espresso, Vodka, Zuckersirup, Kaffeelikör und Kaffeebohnen.</p></div><span>7,00 €</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Margarethenhof Brenken · Demo-Website</p>
+      <p>Die vollstaendige Karte wird spaeter aus Menu.txt erweitert.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
